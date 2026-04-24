@@ -1,0 +1,59 @@
+:root {
+  --bg: #f5efe4;
+  --surface: #ece3d4;
+  --surface-2: #e0d3be;
+  --text: #2a231e;
+  --text-muted: #6b5e53;
+  --line: #d0c2ae;
+  --primary: #4a6647;
+  --primary-hover: #3a5138;
+  --accent-wood: #8a5c38;
+  --accent-light: #c9a87c;
+  --accent-dark: #1e1a16;
+  --white: #fdfaf6;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.15;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
