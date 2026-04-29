@@ -1,5 +1,7 @@
 <template>
-  <div id="root">
+  <ImpressumPage v-if="isImpressum" />
+  <DatenschutzPage v-else-if="isDatenschutz" />
+  <div v-else id="root">
     <SiteHeader />
     <main>
       <HeroSection />
@@ -16,7 +18,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import SiteHeader from './components/SiteHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import ValuePropsSection from './components/ValuePropsSection.vue'
@@ -27,10 +29,23 @@ import UseCasesSection from './components/UseCasesSection.vue'
 import SustainabilitySection from './components/SustainabilitySection.vue'
 import FinalCtaSection from './components/FinalCtaSection.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import ImpressumPage from './components/ImpressumPage.vue'
+import DatenschutzPage from './components/DatenschutzPage.vue'
 
-onMounted(() => {
-  const revealEls = document.querySelectorAll('.reveal')
+const isImpressum = ref(window.location.hash === '#impressum')
+const isDatenschutz = ref(window.location.hash === '#datenschutz')
 
+function onHashChange() {
+  isImpressum.value = window.location.hash === '#impressum'
+  isDatenschutz.value = window.location.hash === '#datenschutz'
+  if (!isImpressum.value && !isDatenschutz.value) {
+    // Re-register scroll reveal after returning to main page
+    requestAnimationFrame(initReveal)
+  }
+}
+
+function initReveal() {
+  const revealEls = document.querySelectorAll('.reveal:not(.is-visible)')
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -42,8 +57,16 @@ onMounted(() => {
     },
     { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
   )
-
   revealEls.forEach((el) => observer.observe(el))
+}
+
+onMounted(() => {
+  initReveal()
+  window.addEventListener('hashchange', onHashChange)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('hashchange', onHashChange)
 })
 </script>
 

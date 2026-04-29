@@ -11,9 +11,11 @@
         <a href="#fertigung">Fertigung</a>
         <a href="#referenzen">Referenzen</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="#impressum" class="footer-legal">Impressum</a>
+        <a href="#datenschutz" class="footer-legal">Datenschutz</a>
       </nav>
 
-      <p class="footer-copy">© 2025 pspixels manufactur</p>
+      <p class="footer-copy">© {{ new Date().getFullYear() }} pspixels manufactur</p>
     </div>
   </footer>
 </template>
@@ -84,6 +86,12 @@
   font-size: 0.68rem;
   color: #3d3028;
   text-align: right;
+}
+
+.footer-legal {
+  opacity: 0.6;
+  border-left: 1px solid #3d3028;
+  padding-left: 2rem;
 }
 
 @media (max-width: 768px) {
