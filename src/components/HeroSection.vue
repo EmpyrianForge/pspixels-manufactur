@@ -149,7 +149,7 @@
               fill="none" stroke="#b8b0a4" stroke-width="0.6" opacity="0.5"/>
 
             <!-- Brand text on board -->
-            <text x="160" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8a6a45" letter-spacing="3" opacity="0.7">PSPIXELS MANUFACTUR</text>
+            <text x="160" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8a6a45" letter-spacing="3" opacity="0.7">PSPIXELS STUDIO</text>
             <line x1="80" y1="362" x2="240" y2="362" stroke="#6b4a28" stroke-width="0.5" opacity="0.4"/>
 
             <!-- Hanging mount holes -->

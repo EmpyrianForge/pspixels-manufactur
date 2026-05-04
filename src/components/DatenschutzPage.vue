@@ -2,7 +2,7 @@
   <div class="datenschutz-page">
     <header class="ds-header">
       <div class="ds-header-inner">
-        <a href="/" class="ds-logo" @click.prevent="goHome">pspixels manufactur</a>
+        <a href="/" class="ds-logo" @click.prevent="goHome">Pspixels Studio</a>
         <a href="/" class="ds-back" @click.prevent="goHome">← Zurück</a>
       </div>
     </header>
@@ -195,7 +195,7 @@
 
     <footer class="ds-footer">
       <div class="ds-footer-inner">
-        <p>© {{ new Date().getFullYear() }} pspixels manufactur</p>
+        <p>© {{ new Date().getFullYear() }} Pspixels Studio</p>
         <nav class="ds-footer-nav">
           <a href="#impressum" @click.prevent="goImpressum">Impressum</a>
           <a href="/" @click.prevent="goHome">Zurück zur Startseite</a>

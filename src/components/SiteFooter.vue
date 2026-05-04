@@ -2,8 +2,8 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <p class="brand-name">pspixels manufactur</p>
-        <p class="brand-tagline">Topografische Reliefkarten aus Holz &amp; 3D-Druck.</p>
+        <p class="brand-name">Pspixels Studio</p>
+        <p class="brand-tagline">Topografische Reliefkarten aus Holz &amp; 3D-Druck. — pspixels-studio.de</p>
       </div>
 
       <nav class="footer-nav" aria-label="Footernavigation">
@@ -15,7 +15,7 @@
         <a href="#datenschutz" class="footer-legal">Datenschutz</a>
       </nav>
 
-      <p class="footer-copy">© {{ new Date().getFullYear() }} pspixels manufactur</p>
+      <p class="footer-copy">© {{ new Date().getFullYear() }} Pspixels Studio</p>
     </div>
   </footer>
 </template>

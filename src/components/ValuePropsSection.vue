@@ -2,7 +2,7 @@
   <section class="value-props">
     <div class="value-props-inner">
       <header class="section-header reveal">
-        <p class="section-label">Warum pspixels</p>
+        <p class="section-label">Warum Pspixels Studio</p>
       </header>
 
       <ol class="props-list">

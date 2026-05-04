@@ -1,7 +1,7 @@
 <template>
   <header :class="['site-header', { 'is-scrolled': scrolled }]">
     <div class="header-inner">
-      <a href="#" class="logo">pspixels manufactur</a>
+      <a href="#" class="logo">Pspixels Studio</a>
 
       <nav class="nav-desktop" aria-label="Hauptnavigation">
         <a href="#materialien">Materialien</a>

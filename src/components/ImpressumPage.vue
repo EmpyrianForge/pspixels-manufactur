@@ -2,7 +2,7 @@
   <div class="impressum-page">
     <header class="imp-header">
       <div class="imp-header-inner">
-        <a href="/" class="imp-logo" @click.prevent="goHome">pspixels manufactur</a>
+        <a href="/" class="imp-logo" @click.prevent="goHome">Pspixels Studio</a>
         <a href="/" class="imp-back" @click.prevent="goHome">← Zurück</a>
       </div>
     </header>
@@ -97,7 +97,7 @@
 
     <footer class="imp-footer">
       <div class="imp-footer-inner">
-        <p>© {{ new Date().getFullYear() }} pspixels manufactur</p>
+        <p>© {{ new Date().getFullYear() }} Pspixels Studio</p>
         <nav class="imp-footer-nav">
           <a href="#datenschutz" @click.prevent="goDatenschutz">Datenschutz</a>
           <a href="/" @click.prevent="goHome">Zurück zur Startseite</a>
