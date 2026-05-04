@@ -33,10 +33,6 @@
             <span class="detail-key">Fertigung</span>
             <span class="detail-val">Auf Anfrage, 2–4 Wochen</span>
           </div>
-          <div class="detail-item">
-            <span class="detail-key">Formate</span>
-            <span class="detail-val">30×30 cm bis 80×80 cm</span>
-          </div>
         </div>
       </div>
 
