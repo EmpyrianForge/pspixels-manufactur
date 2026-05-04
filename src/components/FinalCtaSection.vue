@@ -188,7 +188,7 @@
 <script setup>
 import { ref, reactive } from 'vue'
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xpwzgvnj'
+const FORMSPREE_ENDPOINT = 'https://formsubmit.co/ajax/info@pspixels-studio.de'
 
 const submitted = ref(false)
 const loading = ref(false)
