@@ -11,7 +11,7 @@
           Ihr Objekt.
         </h2>
         <p class="cta-sub">
-          Wir fertigen auf Anfrage. Jede Anfrage wird persönlich beantwortet.
+          Jedes Objekt entsteht auf Anfrage. Die Nachricht wird persönlich gelesen und individuell beantwortet.
         </p>
 
         <div class="direct-contact">
@@ -19,9 +19,6 @@
           <a href="mailto:info@pspixels-studio.de" class="direct-email">
             info@pspixels-studio.de
           </a>
-          <p class="direct-note">
-            Antwort in der Regel innerhalb von 48 Stunden.
-          </p>
         </div>
 
         <div class="contact-details">
@@ -40,8 +37,8 @@
       <div class="form-wrap reveal" style="transition-delay: 0.18s">
         <div v-if="!submitted" class="form-box">
           <div class="form-header">
-            <h3 class="form-title">Anfrage stellen</h3>
-            <p class="form-subtitle">Alle Felder mit * sind Pflichtfelder.</p>
+            <h3 class="form-title">Ihr Projekt</h3>
+            <p class="form-subtitle">Pflichtfelder sind mit * markiert.</p>
           </div>
 
           <form
@@ -66,19 +63,8 @@
               </div>
 
               <div class="form-group">
-                <label for="type">Anfragetyp</label>
-                <div class="select-wrap">
-                  <select id="type" v-model="form.type">
-                    <option value="">Bitte wählen …</option>
-                    <option value="Projekt anfragen">Projekt anfragen</option>
-                    <option value="Beratung anfordern">Beratung anfordern</option>
-                    <option value="Katalog anfragen">Katalog anfragen</option>
-                    <option value="Materialmuster anfordern">Materialmuster anfordern</option>
-                    <option value="B2B / Großbestellung">B2B / Großbestellung</option>
-                    <option value="Sonstiges">Sonstiges</option>
-                  </select>
-                  <span class="select-arrow" aria-hidden="true">↓</span>
-                </div>
+                <label>Anfragetyp</label>
+                <p class="type-fixed">Individuelle Gravur</p>
               </div>
             </div>
 
@@ -127,7 +113,7 @@
                 id="message"
                 v-model="form.message"
                 rows="5"
-                placeholder="Beschreiben Sie Ihr Vorhaben — gewünschter Ort, Format, Holzart, Menge …"
+                placeholder="Beschreiben Sie Ihr Vorhaben – gewünschter Ort, Format, Einsatzbereich oder besondere Wünsche."
                 @blur="validateField('message')"
               ></textarea>
               <span v-if="errors.message" class="error-msg">{{ errors.message }}</span>
@@ -152,7 +138,7 @@
               :class="{ 'is-loading': loading }"
               :disabled="loading"
             >
-              <span v-if="!loading">Anfrage absenden</span>
+              <span v-if="!loading">Projekt anfragen</span>
               <span v-else class="loading-dots">Wird gesendet<span>.</span><span>.</span><span>.</span></span>
             </button>
 
@@ -195,7 +181,6 @@ const form = reactive({
   email: '',
   phone: '',
   location: '',
-  type: '',
   message: '',
   privacy: false,
 })
@@ -248,10 +233,10 @@ async function handleSubmit() {
         email: form.email,
         phone: form.phone || '—',
         location: form.location || '—',
-        type: form.type || '—',
+        type: 'Individuelle Gravur',
         message: form.message,
         _replyto: form.email,
-        _subject: `Anfrage von ${form.name}${form.type ? ' — ' + form.type : ''}`,
+        _subject: `Anfrage von ${form.name} — Individuelle Gravur`,
       }),
     })
 
@@ -523,14 +508,14 @@ function goDataschutz() {
   color: var(--white);
 }
 
-.select-arrow {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #5a4d42;
-  font-size: 0.75rem;
-  pointer-events: none;
+.type-fixed {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #8a7a6a;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 /* Checkbox / privacy */

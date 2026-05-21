@@ -5,7 +5,7 @@
         <p class="section-label">Verantwortung</p>
         <h2 class="section-title">Hergestellt, um zu bleiben.</h2>
         <p class="section-intro">
-          Kein Greenwashing. Nur ein ehrlicher Anspruch: Weniger, aber besser.
+          Kein großes Versprechen, sondern ein klarer Anspruch: weniger, bewusster, langlebiger.
         </p>
       </div>
 
@@ -31,15 +31,15 @@
 const points = [
   {
     title: 'Echte Materialien',
-    body: 'Holz aus kontrollierten Quellen. Kein MDF, kein Furnier. Was Sie sehen, ist was das Objekt ist — innen wie außen.',
+    body: 'Eiche aus kontrollierten Quellen. Kein Dekor, keine künstliche Oberfläche.',
   },
   {
     title: 'Langlebige Gestaltung',
-    body: 'Kein Trend, keine Saison. Objekte, die in zehn Jahren noch genauso relevant sind wie heute. Zeitlosigkeit ist die nachhaltigste Entscheidung.',
+    body: 'Keine Saison, kein schneller Trend. Sondern Objekte, die auch in Jahren noch relevant wirken – weil sie ruhig, zeitlos und präzise gestaltet sind.',
   },
   {
     title: 'Gezielter Materialeinsatz',
-    body: 'Additive Fertigung bedeutet: kein Verschnitt. Das Relief entsteht exakt so groß wie nötig. Nicht mehr, nicht weniger.',
+    body: 'Das Relief entsteht nur dort, wo es gebraucht wird. Präzise aufgebaut, materialbewusst gedacht und auf das Wesentliche reduziert.',
   },
 ]
 </script>

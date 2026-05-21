@@ -5,20 +5,17 @@
       <div class="material-panel wood-panel reveal">
         <div class="panel-content">
           <p class="panel-label">Material I</p>
-          <h2 class="panel-headline">Walnuss.<br />Eiche.<br />Natur.</h2>
+          <h2 class="panel-headline">Eiche.<br />Charakter.<br />Natur.</h2>
           <p class="panel-body">
-            Jede Platte trägt eine Geschichte. Die Maserung entsteht über Jahrzehnte —
-            sie ist kein Dekor, sondern Substanz. Wir verwenden ausgewählte Hölzer
-            aus kontrollierten Quellen, geölt und nicht lackiert.
+            Wir arbeiten zum Start ausschließlich mit Eiche. Ihre natürliche Maserung
+            bringt Wärme, Tiefe und Ruhe ins Objekt – geölt, spürbar und bewusst
+            ohne dekorative Oberfläche.
           </p>
           <ul class="panel-list">
-            <li>Walnuss (amerikanisch, europäisch)</li>
-            <li>Eiche (hell, geräuchert)</li>
-            <li>Esche, Ahorn auf Anfrage</li>
+            <li>Eiche mit natürlicher Maserung</li>
+            <li>Geölte Oberfläche</li>
+            <li>Ehrliches Material mit ruhiger Wirkung</li>
           </ul>
-        </div>
-        <div class="wood-texture-strip" aria-hidden="true">
-          <div class="grain-line" v-for="i in 8" :key="i" :style="{ top: `${8 + i * 11}%`, opacity: 0.15 + (i % 3) * 0.07 }"></div>
         </div>
       </div>
 
@@ -33,12 +30,9 @@
           </p>
           <ul class="panel-list">
             <li>Schichthöhe 0,1 mm</li>
-            <li>Weißes/crème PLA, matte Oberfläche</li>
-            <li>Verbindung mechanisch — kein Kleber</li>
+            <li>Weißes/crème PLA · Marble, matte Oberfläche</li>
+            <li>Klare Konturen</li>
           </ul>
-        </div>
-        <div class="print-texture-strip" aria-hidden="true">
-          <div class="layer-line" v-for="i in 14" :key="i" :style="{ top: `${3 + i * 6.5}%` }"></div>
         </div>
       </div>
 

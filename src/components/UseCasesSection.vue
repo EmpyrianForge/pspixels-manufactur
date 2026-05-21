@@ -29,31 +29,31 @@ const tiles = [
   {
     name: 'Hotel & Hospitality',
     category: 'Gastronomie',
-    desc: 'Empfangsbereiche und Lobbys, die Gäste mit dem Ort verbinden. Lokale Topografie als stilles Statement.',
+    desc: 'Für Lobbys, Empfangsbereiche und Häuser, die Gästen einen Ort sichtbar machen wollen. Lokale Topografie als stilles Statement mit Charakter.',
     bg: 'linear-gradient(135deg, #3d2b1a 0%, #4a3320 100%)',
   },
   {
     name: 'Office & Empfang',
     category: 'Arbeitsraum',
-    desc: 'Der Hauptsitz auf der Wand. Standorte, Märkte, Herkunft — räumlich und haptisch erfahrbar gemacht.',
+    desc: 'Ein Objekt, das Herkunft, Standorte oder Identität räumlich erfahrbar macht. Für Eingangsbereiche, Büros und Orte mit Haltung.',
     bg: 'linear-gradient(135deg, #2c2620 0%, #3a3028 100%)',
   },
   {
-    name: 'Privater Wohnraum',
+    name: 'Wohnen',
     category: 'Wohnen',
-    desc: 'Keine Kunstdrucke. Ein Objekt mit Gewicht, Tiefe und Bedeutung. Der Lieblingsort als dauerhaftes Wandstück.',
+    desc: 'Kein Kunstdruck, sondern ein Objekt mit Tiefe und Bedeutung. Der Lieblingsort als dauerhaftes Stück an der Wand.',
     bg: 'linear-gradient(135deg, #4a3a2a 0%, #3d2b1a 100%)',
   },
   {
     name: 'Retail & Showroom',
     category: 'Handel',
-    desc: 'Produkte, die Kunden berühren wollen. Die taktile Qualität eines Reliefs schafft Aufmerksamkeit ohne Lärm.',
+    desc: 'Für Räume, in denen Materialität wahrgenommen wird. Ein Relief schafft Aufmerksamkeit, ohne laut zu sein.',
     bg: 'linear-gradient(135deg, #302820 0%, #3d3028 100%)',
   },
   {
     name: 'Konferenz & Repräsentation',
     category: 'Business',
-    desc: 'Ein Wandobjekt, das in Meetings gesehen wird. Das Gesprächsstoff schafft und Haltung zeigt.',
+    desc: 'Ein Wandobjekt für Räume, in denen Gespräche entstehen. Präzise, präsent und sichtbar mit Anspruch gefertigt.',
     bg: 'linear-gradient(135deg, #251e18 0%, #352a20 100%)',
   },
 ]

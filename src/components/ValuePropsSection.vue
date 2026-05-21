@@ -19,6 +19,8 @@
           </div>
         </li>
       </ol>
+
+      <p class="props-tagline reveal">Wärme im Material. Präzision in der Form.</p>
     </div>
   </section>
 </template>
@@ -27,19 +29,19 @@
 const props = [
   {
     title: 'Echte Haptik',
-    desc: 'Keine Folie, kein Laminat. Natürliche Maserung unter den Fingerspitzen — Holz, das sich nach Holz anfühlt.',
+    desc: 'Kein Dekor, kein Laminat. Sondern Holz mit natürlicher Maserung und spürbarer Oberfläche.',
   },
   {
     title: 'Präzise gefertigt',
-    desc: 'Additive Fertigung mit 0,1 mm Schichthöhe. Jede Höhenlinie sitzt genau dort, wo sie hingehört.',
+    desc: 'Jede Höhenlinie sitzt genau dort, wo sie hingehört. Sauber gefertigt mit feiner Schichthöhe und klarer Kontur.',
   },
   {
     title: 'Individuell gestaltbar',
-    desc: 'Jede Karte, jeder Ort, jedes Format. Vom Heimatort bis zur Lieblingsküste — auf Wunsch.',
+    desc: 'Jeder Ort, jedes Format, jede Wirkung. Von der Lieblingsinsel bis zum maßgefertigten Objekt.',
   },
   {
     title: 'Dauerhafter Wert',
-    desc: 'Kein Saisonprodukt. Ein Designobjekt, das in zwanzig Jahren noch genauso steht wie am ersten Tag.',
+    desc: 'Kein Saisonprodukt, sondern ein Objekt mit Dauer. Gemacht für Räume, die langfristig wirken sollen.',
   },
 ]
 </script>
@@ -124,6 +126,17 @@ const props = [
   .prop-item:nth-child(n+3) {
     border-top: 1px solid var(--line);
   }
+}
+
+.props-tagline {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 3rem 0 0;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 768px) {

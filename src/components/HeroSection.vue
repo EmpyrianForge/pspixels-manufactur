@@ -2,14 +2,14 @@
   <section class="hero" aria-label="Hero">
     <div class="hero-inner">
       <div class="hero-text" :class="{ 'fade-in': loaded }">
-        <p class="hero-eyebrow">Wandobjekte aus Holz &amp; 3D-Druck</p>
+        <p class="hero-eyebrow">Topografische Reliefkarten aus Holz &amp; 3D-Druck</p>
         <h1 class="hero-headline">
           Wo echtes Holz auf<br />
           präzisen 3D-Druck trifft.
         </h1>
         <p class="hero-subline">
-          Topografische Reliefkarten für Räume,<br />
-          die Materialität spürbar machen.
+          Für Hotels, Ferienhäuser und besondere Räume.<br />
+          Handgefertigt, materialstark und auf Wunsch mit individueller Gravur.
         </p>
         <div class="hero-ctas">
           <a href="#kontakt" class="btn-primary">Projekt anfragen</a>
@@ -159,7 +159,7 @@
 
           <div class="product-label">
             <span class="label-place">Mallorca</span>
-            <span class="label-sub">Topografisches Relief · Walnuss + PLA</span>
+            <span class="label-sub">Topografisches Relief – Echtholz – PLA</span>
           </div>
         </div>
       </div>

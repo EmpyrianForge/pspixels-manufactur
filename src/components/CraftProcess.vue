@@ -31,19 +31,19 @@
 const steps = [
   {
     title: 'Materialauswahl',
-    desc: 'Handverlesene Hölzer aus kontrollierten Quellen. Jede Platte wird auf Maserung, Feuchte und Dichte geprüft.',
+    desc: 'Eiche aus kontrollierten Quellen — mit einzigartiger Maserung und Charakter.',
   },
   {
     title: 'Digitale Konstruktion',
-    desc: 'Topografiedaten werden aufbereitet und zu präzisen 3D-Modellen verarbeitet. Maßstab, Höhenexponent und Format nach Wunsch.',
+    desc: 'Topografiedaten werden aufbereitet und in ein präzises 3D-Modell übersetzt. Maßstab, Höhenwirkung und Format entstehen abgestimmt auf das Objekt.',
   },
   {
     title: 'Additive Fertigung',
-    desc: 'Schicht für Schicht. 0,1 mm Auflösung. Das Relief entsteht in einem Stück — keine Nachbearbeitung der Form nötig.',
+    desc: 'Schicht für Schicht entsteht ein präzises Relief mit feiner Auflösung. Die Form wird direkt aufgebaut – klar, detailreich und materialeffizient.',
   },
   {
     title: 'Veredelung & Montage',
-    desc: 'Schleifen, Ölen, Verbinden. Das Relief wird passgenau auf das Holz gesetzt. Signiert, verpackt, versendet.',
+    desc: 'Holz und Relief werden sorgfältig ausgearbeitet und als Objekt vollendet. Zum Schluss wird jedes Stück geprüft, graviert, verpackt und versendet.',
   },
 ]
 </script>

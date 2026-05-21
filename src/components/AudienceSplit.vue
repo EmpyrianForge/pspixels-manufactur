@@ -7,8 +7,8 @@
           <p class="panel-eyebrow">Für Professionals</p>
           <h2 class="panel-title">Räume, die<br />Haltung zeigen.</h2>
           <p class="panel-intro">
-            Ein Objekt, das Kunden beim Eintreten bemerken. Das Gespräche auslöst.
-            Das Ihren Anspruch an Materialität sichtbar macht.
+            Ein Objekt, das beim Eintreten wahrgenommen wird. Das Gespräche auslöst
+            und den Anspruch an Materialität, Form und Atmosphäre sichtbar macht.
           </p>
           <ul class="use-list">
             <li>Architektur &amp; Planungsbüros</li>
@@ -23,10 +23,10 @@
       <article class="audience-panel private reveal" style="transition-delay: 0.15s">
         <div class="panel-inner">
           <p class="panel-eyebrow">Für Liebhaber</p>
-          <h2 class="panel-title">Ein Ort.<br />Dauerhaft.</h2>
+          <h2 class="panel-title">Ein Ort.<br />Der bleibt.</h2>
           <p class="panel-intro">
             Der Berg, an dem man aufgewachsen ist. Die Küste des ersten Urlaubs.
-            Karten, die nicht im Regal stehen, sondern an der Wand hängen.
+            Karten, die nicht im Regal stehen, sondern sichtbar Teil des Raums werden.
           </p>
           <ul class="use-list">
             <li>Private Wohnräume &amp; Lofts</li>
