@@ -63,8 +63,15 @@
               </div>
 
               <div class="form-group">
-                <label>Anfragetyp</label>
-                <p class="type-fixed">Individuelle Gravur</p>
+                <label for="type">Anfragetyp</label>
+                <div class="select-wrap">
+                  <select id="type" v-model="form.type">
+                    <option value="">Bitte wählen …</option>
+                    <option value="Name der Karte">Name der Karte</option>
+                    <option value="Individueller Schriftzug">Individueller Schriftzug</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true">↓</span>
+                </div>
               </div>
             </div>
 
@@ -181,6 +188,7 @@ const form = reactive({
   email: '',
   phone: '',
   location: '',
+  type: '',
   message: '',
   privacy: false,
 })
@@ -233,10 +241,10 @@ async function handleSubmit() {
         email: form.email,
         phone: form.phone || '—',
         location: form.location || '—',
-        type: 'Individuelle Gravur',
+        type: form.type || '—',
         message: form.message,
         _replyto: form.email,
-        _subject: `Anfrage von ${form.name} — Individuelle Gravur`,
+        _subject: `Anfrage von ${form.name}${form.type ? ' — ' + form.type : ''}`,
       }),
     })
 
@@ -508,14 +516,42 @@ function goDataschutz() {
   color: var(--white);
 }
 
-.type-fixed {
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  padding: 0.9rem 2.5rem 0.9rem 1rem;
   font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
-  color: #8a7a6a;
-  padding: 0.9rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.select-wrap select:focus {
+  border-color: rgba(201, 168, 124, 0.4);
+}
+
+.select-wrap select option {
+  background: #2a1c10;
+  color: var(--white);
+}
+
+.select-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5a4d42;
+  font-size: 0.75rem;
+  pointer-events: none;
 }
 
 /* Checkbox / privacy */

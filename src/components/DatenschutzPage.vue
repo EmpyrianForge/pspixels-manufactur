@@ -129,7 +129,27 @@
         </section>
 
         <section class="ds-block">
-          <h2>6. Webfonts (lokal eingebunden)</h2>
+          <h2>6. Formularübermittlung (formsubmit.co)</h2>
+          <p>
+            Zur Übermittlung von Kontaktanfragen nutzen wir den Dienst formsubmit.co des Anbieters
+            FormSubmit LLC. Beim Absenden des Formulars werden Ihre eingegebenen Daten (Name,
+            E-Mail-Adresse, Telefonnummer, Ort/Region, Anfragetyp und Nachricht) an die Server
+            von formsubmit.co übertragen und von dort an unsere E-Mail-Adresse weitergeleitet.
+          </p>
+          <p>
+            Die Übertragung erfolgt verschlüsselt (HTTPS). formsubmit.co speichert keine Daten
+            dauerhaft; die Weiterleitung erfolgt unmittelbar. Weitere Informationen finden Sie
+            in der Datenschutzerklärung von formsubmit.co unter
+            <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener noreferrer">formsubmit.co/privacy</a>.
+          </p>
+          <p>
+            Rechtsgrundlage für die Verarbeitung ist Ihre Einwilligung gemäß Art. 6 Abs. 1
+            lit. a DSGVO, die Sie durch Aktivieren der Datenschutz-Checkbox im Formular erteilen.
+          </p>
+        </section>
+
+        <section class="ds-block">
+          <h2>8. Webfonts (lokal eingebunden)</h2>
           <p>
             Diese Website verwendet die Schriftarten <em>Cormorant Garamond</em> und
             <em>Inter</em>. Die Schriftdateien sind auf unserem eigenen Server lokal
@@ -140,7 +160,7 @@
         </section>
 
         <section class="ds-block">
-          <h2>7. Cookies</h2>
+          <h2>9. Cookies</h2>
           <p>
             Diese Website verwendet keine Tracking-Cookies und keine Analyse-Dienste. Es werden
             ausschließlich technisch notwendige Session-Informationen des Browsers genutzt, die
@@ -149,7 +169,7 @@
         </section>
 
         <section class="ds-block">
-          <h2>8. Rechte der betroffenen Person</h2>
+          <h2>10. Rechte der betroffenen Person</h2>
           <p>
             Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.&nbsp;S.
             d. DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:
@@ -181,7 +201,7 @@
         </section>
 
         <section class="ds-block">
-          <h2>9. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+          <h2>11. Aktualität und Änderung dieser Datenschutzerklärung</h2>
           <p>
             Diese Datenschutzerklärung ist aktuell gültig und hat den Stand April 2026.
             Durch die Weiterentwicklung unserer Website und Angebote oder aufgrund geänderter
