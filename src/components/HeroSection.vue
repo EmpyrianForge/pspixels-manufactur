@@ -26,137 +26,9 @@
 
       <div class="hero-visual" :class="{ 'fade-in-right': loaded }" aria-hidden="true">
         <div class="product-frame">
-          <svg
-            viewBox="0 0 320 420"
-            xmlns="http://www.w3.org/2000/svg"
-            class="product-svg"
-          >
-            <!-- Wood board background -->
-            <defs>
-              <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#3d2b1a;stop-opacity:1" />
-                <stop offset="40%" style="stop-color:#4a3320;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#2c1e10;stop-opacity:1" />
-              </linearGradient>
-              <!-- Wood grain lines -->
-              <pattern id="grain" patternUnits="userSpaceOnUse" width="320" height="420">
-                <line x1="0" y1="60" x2="320" y2="55" stroke="#5a3d22" stroke-width="0.5" opacity="0.4"/>
-                <line x1="0" y1="110" x2="320" y2="108" stroke="#5a3d22" stroke-width="0.3" opacity="0.3"/>
-                <line x1="0" y1="160" x2="320" y2="163" stroke="#5a3d22" stroke-width="0.4" opacity="0.35"/>
-                <line x1="0" y1="220" x2="320" y2="217" stroke="#5a3d22" stroke-width="0.3" opacity="0.3"/>
-                <line x1="0" y1="280" x2="320" y2="282" stroke="#5a3d22" stroke-width="0.4" opacity="0.3"/>
-                <line x1="0" y1="340" x2="320" y2="338" stroke="#5a3d22" stroke-width="0.3" opacity="0.25"/>
-              </pattern>
-              <filter id="reliefShadow">
-                <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1a0e06" flood-opacity="0.5"/>
-              </filter>
-              <filter id="subtleGlow">
-                <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#e8e0d5" flood-opacity="0.3"/>
-              </filter>
-            </defs>
-
-            <!-- Board -->
-            <rect x="10" y="10" width="300" height="400" rx="3" fill="url(#woodGrad)" />
-            <rect x="10" y="10" width="300" height="400" rx="3" fill="url(#grain)" />
-
-            <!-- Board edge highlight (top) -->
-            <rect x="10" y="10" width="300" height="2" rx="1" fill="#6b4a28" opacity="0.6"/>
-            <!-- Board edge shadow (bottom) -->
-            <rect x="10" y="408" width="300" height="2" rx="1" fill="#1a0e06" opacity="0.8"/>
-
-            <!-- Mallorca-like topographic relief — organic island silhouette -->
-            <!-- Outer island shape (lowest relief layer) -->
-            <path
-              d="M 90 290
-                 C 70 285, 55 270, 52 255
-                 C 48 238, 55 218, 60 205
-                 C 65 190, 62 175, 68 162
-                 C 74 148, 82 138, 92 130
-                 C 102 122, 115 118, 128 115
-                 C 142 112, 155 110, 168 112
-                 C 182 114, 194 120, 205 128
-                 C 218 136, 228 148, 235 160
-                 C 243 174, 248 190, 248 206
-                 C 248 222, 244 238, 238 250
-                 C 230 266, 216 278, 200 286
-                 C 184 294, 165 298, 148 298
-                 C 130 298, 108 296, 90 290 Z"
-              fill="#c8bfb0"
-              filter="url(#reliefShadow)"
-            />
-
-            <!-- Mid relief layer -->
-            <path
-              d="M 105 272
-                 C 90 266, 80 252, 78 238
-                 C 76 222, 82 206, 88 194
-                 C 94 180, 96 166, 104 155
-                 C 112 144, 124 136, 136 132
-                 C 150 128, 162 128, 175 132
-                 C 188 136, 200 146, 208 158
-                 C 216 170, 220 186, 218 200
-                 C 216 216, 210 230, 200 240
-                 C 190 252, 176 260, 160 264
-                 C 144 268, 122 278, 105 272 Z"
-              fill="#dbd4c8"
-              filter="url(#subtleGlow)"
-            />
-
-            <!-- Inner relief — highlands -->
-            <path
-              d="M 126 248
-                 C 114 242, 108 230, 108 218
-                 C 108 204, 114 192, 122 182
-                 C 130 172, 140 165, 152 163
-                 C 164 161, 176 164, 186 172
-                 C 196 180, 202 194, 200 206
-                 C 198 220, 190 232, 178 240
-                 C 166 248, 150 254, 136 252
-                 C 132 251, 128 250, 126 248 Z"
-              fill="#ede8e0"
-            />
-
-            <!-- Peak / summit -->
-            <path
-              d="M 148 224
-                 C 144 218, 142 210, 144 202
-                 C 146 194, 152 188, 158 186
-                 C 165 184, 172 188, 174 196
-                 C 177 204, 174 214, 168 220
-                 C 162 226, 154 228, 148 224 Z"
-              fill="#f5f2ee"
-            />
-
-            <!-- Small northern peninsula -->
-            <path
-              d="M 185 128 C 190 118, 198 110, 208 108 C 216 106, 224 110, 226 118 C 228 126, 222 134, 212 136 C 204 138, 194 136, 185 128 Z"
-              fill="#c8bfb0"
-            />
-            <path
-              d="M 190 126 C 194 118, 202 114, 210 116 C 218 118, 220 126, 214 132 C 208 136, 198 134, 190 126 Z"
-              fill="#dbd4c8"
-            />
-
-            <!-- Contour lines on the main relief -->
-            <path
-              d="M 115 258 C 100 250, 92 236, 92 222 C 92 206, 100 192, 110 182"
-              fill="none" stroke="#b8b0a4" stroke-width="0.6" opacity="0.5"/>
-            <path
-              d="M 205 258 C 218 248, 224 232, 222 216 C 220 198, 212 184, 200 174"
-              fill="none" stroke="#b8b0a4" stroke-width="0.6" opacity="0.5"/>
-            <path
-              d="M 130 168 C 142 162, 156 160, 168 164 C 180 168, 190 176, 196 186"
-              fill="none" stroke="#b8b0a4" stroke-width="0.6" opacity="0.5"/>
-
-            <!-- Brand text on board -->
-            <text x="160" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#8a6a45" letter-spacing="3" opacity="0.7">PSPIXELS STUDIO</text>
-            <line x1="80" y1="362" x2="240" y2="362" stroke="#6b4a28" stroke-width="0.5" opacity="0.4"/>
-
-            <!-- Hanging mount holes -->
-            <circle cx="60" cy="35" r="4" fill="#2c1e10" stroke="#1a0e06" stroke-width="1"/>
-            <circle cx="260" cy="35" r="4" fill="#2c1e10" stroke="#1a0e06" stroke-width="1"/>
-          </svg>
-
+          <div class="canvas-wrap" ref="canvasWrap">
+            <canvas ref="canvas" class="model-canvas"></canvas>
+          </div>
           <div class="product-label">
             <span class="label-place">Mallorca</span>
             <span class="label-sub">Topografisches Relief – Echtholz – PLA</span>
@@ -168,13 +40,138 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import * as THREE from 'three'
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 
 const loaded = ref(false)
+const canvas = ref(null)
+const canvasWrap = ref(null)
+
+let renderer, scene, camera, controls, pivot, animId
+
+const DEG80 = Math.PI * 80 / 180
+const mouse = { x: 0, y: 0 }
+const current = { x: 0, y: 0 }
+
+function onMouseMove(e) {
+  mouse.x = (e.clientX / window.innerWidth) * 2 - 1
+  mouse.y = -((e.clientY / window.innerHeight) * 2 - 1)
+}
+
+function initThree() {
+  const wrap = canvasWrap.value
+  const w = wrap.clientWidth
+  const h = wrap.clientHeight
+
+  renderer = new THREE.WebGLRenderer({ canvas: canvas.value, antialias: true, alpha: true })
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+  renderer.setSize(w, h)
+  renderer.outputColorSpace = THREE.SRGBColorSpace
+  renderer.shadowMap.enabled = true
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap
+
+  scene = new THREE.Scene()
+
+  camera = new THREE.PerspectiveCamera(38, w / h, 0.01, 100)
+  camera.position.set(0, 0, 2.4)
+
+  // orbit controls — drag to rotate, clamped to ±80°
+  controls = new OrbitControls(camera, canvas.value)
+  controls.enableZoom = false
+  controls.enablePan = false
+  controls.minAzimuthAngle = -DEG80
+  controls.maxAzimuthAngle = DEG80
+  controls.minPolarAngle = Math.PI / 2 - DEG80
+  controls.maxPolarAngle = Math.PI / 2 + DEG80
+  controls.enableDamping = true
+  controls.dampingFactor = 0.07
+
+  // lights
+  const ambient = new THREE.AmbientLight(0xfff5e8, 1.6)
+  scene.add(ambient)
+
+  const key = new THREE.DirectionalLight(0xfff8f0, 3.5)
+  key.position.set(2, 4, 3)
+  key.castShadow = true
+  scene.add(key)
+
+  const fill = new THREE.DirectionalLight(0xe8f0ff, 1.2)
+  fill.position.set(-3, 1, 2)
+  scene.add(fill)
+
+  const rim = new THREE.DirectionalLight(0xffddb0, 0.8)
+  rim.position.set(0, -2, -3)
+  scene.add(rim)
+
+  const loader = new GLTFLoader()
+  loader.load('/Modell/Map-Werbung.glb', (gltf) => {
+    const model = gltf.scene
+
+    const box = new THREE.Box3().setFromObject(model)
+    const size = box.getSize(new THREE.Vector3())
+    const maxDim = Math.max(size.x, size.y, size.z)
+    model.scale.setScalar(1.4 / maxDim)
+
+    const box2 = new THREE.Box3().setFromObject(model)
+    const centre = box2.getCenter(new THREE.Vector3())
+    model.position.sub(centre)
+
+    model.traverse((child) => {
+      if (child.isMesh) {
+        child.castShadow = true
+        child.receiveShadow = true
+      }
+    })
+
+    pivot = new THREE.Group()
+    pivot.add(model)
+    scene.add(pivot)
+  })
+
+  animate()
+}
+
+function animate() {
+  animId = requestAnimationFrame(animate)
+
+  // smooth mouse-follow on the pivot (subtle tilt, ±5°)
+  current.x += (mouse.x - current.x) * 0.05
+  current.y += (mouse.y - current.y) * 0.05
+  if (pivot) {
+    pivot.rotation.y = current.x * 0.18
+    pivot.rotation.x = -current.y * 0.12
+  }
+
+  controls.update()
+  renderer.render(scene, camera)
+}
+
+function onResize() {
+  if (!canvasWrap.value) return
+  const w = canvasWrap.value.clientWidth
+  const h = canvasWrap.value.clientHeight
+  camera.aspect = w / h
+  camera.updateProjectionMatrix()
+  renderer.setSize(w, h)
+}
+
 onMounted(() => {
   requestAnimationFrame(() => {
     setTimeout(() => { loaded.value = true }, 80)
   })
+  initThree()
+  window.addEventListener('mousemove', onMouseMove)
+  window.addEventListener('resize', onResize)
+})
+
+onBeforeUnmount(() => {
+  cancelAnimationFrame(animId)
+  controls?.dispose()
+  renderer?.dispose()
+  window.removeEventListener('mousemove', onMouseMove)
+  window.removeEventListener('resize', onResize)
 })
 </script>
 
@@ -313,12 +310,24 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  width: 100%;
 }
 
-.product-svg {
-  width: 280px;
-  height: auto;
-  filter: drop-shadow(0 20px 60px rgba(30, 20, 10, 0.35)) drop-shadow(0 4px 16px rgba(30, 20, 10, 0.2));
+.canvas-wrap {
+  width: 480px;
+  height: 560px;
+  position: relative;
+  cursor: grab;
+}
+
+.canvas-wrap:active {
+  cursor: grabbing;
+}
+
+.model-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .product-label {
@@ -363,8 +372,9 @@ onMounted(() => {
     order: -1;
   }
 
-  .product-svg {
-    width: 200px;
+  .canvas-wrap {
+    width: 320px;
+    height: 380px;
   }
 }
 </style>
